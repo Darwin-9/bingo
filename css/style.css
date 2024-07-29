@@ -1,0 +1,67 @@
+body {
+    background: linear-gradient(to right, #f80000, #480303);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: rgb(0, 0, 0);
+
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px; /* Establece un ancho máximo para que no se extienda demasiado en pantallas grandes */
+    margin: 0 auto;
+    padding: 20px; /* Añade espacio interno para que el contenido respire */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    flex-wrap: wrap; /* Permite que los elementos internos se ajusten automáticamente a pantallas más pequeñas */
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribuye las columnas uniformemente */
+    margin-bottom: 20px; /* Espacio entre filas */
+}
+
+.col{
+    flex: 0 0 calc(30% - 40px); /* Establece que cada columna ocupe el 50% del espacio disponible menos el espacio del margen */
+    margin: 20px 0; /* Espacio vertical entre columnas */
+    padding: 20px; /* Espacio interno para que el contenido respire */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    background-color: rgb(75, 6, 121);
+}
+
+.tabla {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.fila {
+    display: flex;
+    gap: 5px;
+}
+
+.celda {
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+    flex: 1;
+}
+
+.highlight {
+    background-color: yellow; /* Color de resaltado */
+}
+
+.titulo{
+    display: grid;
+    grid-template-columns: repeat(5, 20px);
+    grid-gap: 50px;
+    text-align: center;
+}
+
+
+
+
+
